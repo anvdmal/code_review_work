@@ -7,27 +7,28 @@ class CalculatorTest {
 
     @Test
     void add() {
-        assertEquals(10, calculator.add(8, 2));
+        assertEquals(5, calculator.add(1, 4));
     }
 
     @Test
     void dif() {
-        assertEquals(6, calculator.dif(8, 2));
+        assertEquals(2, calculator.dif(3, 1));
     }
 
     @Test
     void div() {
-        assertEquals(4, calculator.div(8, 2));
-        assertThrows(IllegalArgumentException.class, () -> calculator.div(8, 0));
+        assertEquals(3, calculator.div(6, 2));
+        assertThrows(ArithmeticException.class, () -> calculator.div(5, 0));
     }
 
     @Test
     void times() {
-        assertEquals(16, calculator.times(8, 2));
+        assertEquals(10, calculator.times(5, 2));
     }
 
     @Test
     void solver() {
-        assertEquals(132, calculator.solver(8, 2, 3));
+        int result = calculator.solver(2, 8, 6);
+        assertEquals(-60, result);
     }
 }
