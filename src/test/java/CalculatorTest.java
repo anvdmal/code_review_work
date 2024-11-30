@@ -29,6 +29,7 @@ class CalculatorTest {
 
     @Test
     void solver() {
-        assertEquals(12, calculator.solver(5, 2, 3, 1));
+        int result = calculator.solver(2, 8, 6);
+        assertEquals(-60, result);
     }
 }
