@@ -1,5 +1,5 @@
 public class Calculator {
-
+  
     public int add(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
     }
@@ -24,6 +24,5 @@ public class Calculator {
         int divisionOfNumber = div(c, a);
         int difOfNumbers = dif(c, b);
         return times(difOfNumbers, times(additionOfNumbers, divisionOfNumber)) ;
-
     }
 }
